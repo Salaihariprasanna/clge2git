@@ -1,0 +1,14 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: url(food1.jpg);
+    background-size:cover;
+}
+h1{
+    margin: 250px 50px 10px 40px;
+}
+p{
+    
+}
