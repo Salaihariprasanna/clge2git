@@ -6,9 +6,18 @@ body{
     background-image: url(food1.jpg);
     background-size:cover;
 }
-h1{
+header{
     margin: 250px 50px 10px 40px;
+    font-family: 'Merriweather',serif;
 }
 p{
+    margin:20px 0px 0px 40px;
+    font-family: 'Open-Sans',sans-serif;
     
 }
+.shopname{
+  font-family: 'Poppins',sans-serif;
+  font-size: 100px;
+  padding:50px;
+}
+
