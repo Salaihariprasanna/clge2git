@@ -6,18 +6,57 @@ body{
     background-image: url(food1.jpg);
     background-size:cover;
 }
-header{
-    margin: 250px 50px 10px 40px;
-    font-family: 'Merriweather',serif;
-}
-p{
-    margin:20px 0px 0px 40px;
-    font-family: 'Open-Sans',sans-serif;
-    
-}
 .shopname{
-  font-family: 'Poppins',sans-serif;
-  font-size: 100px;
-  padding:50px;
+    display: flex;
+    height:100vh;
 }
-
+.left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.right{
+    width:50%;
+}
+.top{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 50%; 
+}
+.bottom{
+    height: 50%;
+    padding: 10px;
+    margin-left: 8.5vw;
+    overflow-y: auto;
+}
+h1, p {
+    margin: 0;
+}
+.top{
+    font-family: 'Poppins',sans-serif;
+    font-size: 120px;
+    color: darkred;
+}
+.bottom h1{
+    font-family: 'Merriweather',serif;
+    font-size:40px;
+    padding-bottom: 10px;
+    color:chocolate;
+}
+.bottom p{
+    font-family: 'Open-Sans',sans-serif;
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: coral;
+}
+.link1{
+    font-family: 'Poppins',sans-serif;
+    font-size: 30px;
+    color: crimson;
+    text-decoration:overline;
+}
+.link1:hover{
+    text-decoration: none;
+    color:lightcoral;
+}
