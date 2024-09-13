@@ -27,7 +27,7 @@ body{
 .bottom{
     height: 50%;
     padding: 10px;
-    margin-left: 8.5vw;
+    margin-left: 8vw;
     overflow-y: auto;
 }
 h1, p {
@@ -54,7 +54,6 @@ h1, p {
     font-family: 'Poppins',sans-serif;
     font-size: 30px;
     color: crimson;
-    text-decoration:overline;
 }
 .link1:hover{
     text-decoration: none;
