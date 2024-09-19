@@ -9,6 +9,7 @@ body{
 .shopname{
     display: flex;
     height:100vh;
+    
 }
 .left{
     width: 50%;
