@@ -1,0 +1,139 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('food2.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20vw;
+}
+
+/* Header and Footer */
+header {
+    text-align: center;
+    color:whitesmoke;
+    text-shadow: black 5px 5px 5px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    color:whitesmoke;
+    text-shadow: black 5px 5px 5px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Glassmorphism Container */
+.glass {
+    background: rgba(189, 55, 55, 0.391);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    perspective: 1000px;
+    width: 300px;
+    height: 400px;
+}
+
+.form-wrapper {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.form-panel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.login {
+    transform: rotateY(0deg);
+}
+
+.signup {
+    transform: rotateY(180deg);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color:darkgray;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    color: black;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    background-color:maroon;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color:rgba(255, 255, 255, 0.7);
+}
+
+.toggle-btn {
+    margin-top: 20px;
+    background-color:maroon;
+    color: white;
+    font-size: 0.9rem;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Flip Animation */
+.flipped {
+    transform: rotateY(180deg);
+}
