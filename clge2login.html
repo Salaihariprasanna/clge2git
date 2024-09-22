@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshBites User Account</title>
+    <link rel="stylesheet" href="clge2login.css">
+</head>
+<body>
+    <header>
+        <h1>FreshBites</h1>
+    </header>
+
+    <main>
+        <section class="glass">
+            <div class="form-container">
+                <!-- Forms Wrapper -->
+                <div class="form-wrapper" id="form-wrapper">
+                    <!-- Login Form -->
+                    <article class="login form-panel" id="login-panel">
+                        <h2>LOGIN</h2>
+                        <form>
+                            <label for="login-email">Email:</label>
+                            <input type="email" id="login-email" required>
+
+                            <label for="login-password">Password:</label>
+                            <input type="password" id="login-password" required>
+
+                            <button type="submit" style="color:white">Login</button>
+                        </form>
+                        <button class="toggle-btn" id="to-signup">Go to Sign Up</button>
+                    </article>
+
+                    <!-- Sign Up Form -->
+                    <article class="signup form-panel" id="signup-panel">
+                        <h2>SIGN UP</h2>
+                        <form>
+                            <label for="signup-email">Email:</label>
+                            <input type="email" id="signup-email" required>
+
+                            <label for="signup-password">Password:</label>
+                            <input type="password" id="signup-password" required>
+
+                            <label for="signup-confirm-password">Confirm Password:</label>
+                            <input type="password" id="signup-confirm-password" required>
+
+                            <button type="submit" style="color:white">Sign Up</button>
+                        </form>
+                        <button class="toggle-btn" id="to-login">Go to Login</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FreshBites. All rights reserved.</p>
+    </footer>
+
+    <script src="clge2login.js"></script>
+</body>
+</html>
