@@ -1,10 +1,12 @@
 *{
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 body{
     background-image: url(food1.jpg);
     background-size:cover;
+    scroll-behavior: smooth;
 }
 .shopname{
     display: flex;
@@ -36,7 +38,10 @@ h1, p {
 .top{
     font-family: 'Poppins',sans-serif;
     font-size: 120px;
-    color: darkred;
+    background: linear-gradient( 45deg,red,yellow);
+     background-clip: text;
+     background-size: cover ;
+     color: transparent;
 }
 .bottom h1{
     font-family: 'Merriweather',serif;
@@ -57,5 +62,94 @@ h1, p {
 }
 .link1:hover{
     text-decoration: none;
-    color:lightcoral;
+    background: linear-gradient(45deg,coral, orange);
+     background-clip: text;
+     background-size: cover ;
+     color: transparent;
+}
+ul {
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+    font-weight:bold ;
+}
+.navbar1{
+    height: 70px;
+    /* border-bottom: 2px solid black;
+    box-shadow: 3px 3px 2px gray; */
+}
+.navbar1 li{
+
+     display: inline-block;
+     
+}
+#shopname{
+   position: absolute;
+   left: 100px; 
+   font-family: brodway,algerian ,serif ;
+   font-size: 35px;
+   font-weight: bolder;
+   filter: drop-shadow( 3px 3px 3px grey);
+}
+#account{
+    position: absolute;
+    right: 100px; 
+    background-color: white;
+}
+#search{
+    border-radius: 20px;
+    padding: 5px;
+    border: 1px soli black;
+    padding-left: 30px;
+    box-shadow: 3px 3px 2px rgb(61, 60, 60);
+    margin-right: 20px;
+}
+.navbar2{
+    height: 60px;
+    background-color:inherit;
+    position: sticky;
+    top: 0px;
+    box-shadow: 3px 3px 2px gray;
+    
+}
+.navbar2>ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif ;
+}
+.navbar2 ul li a {
+    border: 2px solid grey;
+    position: relative;
+    top: 10px;
+    padding: 3px 5px ;
+    border-radius: 5px;
+    color:orangered;
+    background-color: white;
+    box-shadow: 2px 3px 4px rgb(61, 60, 60);
+   
+}
+.fa-sharp{
+      position: absolute;
+      left: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+     font-weight:300; 
+
+}
+.search-container{
+    position: relative;
+    width: 25px;
+    top: 10px;
+}
+#account{
+    border: 2px solid powderblue;
+    border-radius: 25px;
+    padding: 5px;
+    color: black;
+}
+.fa-circle-user{
+    font-size: 20px;
+    margin-right: 5px;
 }
