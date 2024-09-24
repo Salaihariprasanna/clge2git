@@ -78,14 +78,14 @@ nav a{
 .navbar1{
     height: 70px;
     /* border-bottom: 2px solid black;
-    box-shadow: 3px 3px 2px gray; */
-}
-.navbar1 li{
+    box-shadow: 3px 3px 2px gray;*/ 
+ }  
+ .navbar1 li{
 
      display: inline-block;
      
-}
-#shopname{
+} 
+ #shopname{
    position: absolute;
    left: 100px; 
    font-family: brodway,algerian ,serif ;
@@ -116,7 +116,7 @@ nav a{
 }
 .navbar2>ul{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: center;
     font-family: sans-serif ;
 }
@@ -132,11 +132,11 @@ nav a{
    
 }
 .fa-sharp{
-      position: absolute;
-      left: 5px;
-      top: 50%;
-      transform: translateY(-50%);
-     font-weight:300; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight:300; 
+    margin-left: 10px;
 
 }
 .search-container{
@@ -154,3 +154,23 @@ nav a{
     font-size: 20px;
     margin-right: 5px;
 }
+.navbar1 i{
+    margin-right: 10px;
+}
+.navbar2 i{
+    margin-right: 10px;
+}
+.navbar2 ul li a:hover{
+    background-color: #ffa500;
+    color: black;
+}
+.navbar1 {
+    backdrop-filter: blur(30px);
+   
+} 
+.navbar2 {
+    backdrop-filter: blur(30px);
+   
+} 
+
+
