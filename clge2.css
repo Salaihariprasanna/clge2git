@@ -108,16 +108,39 @@ nav{
 .search input{
     height: 30px;
     display: flex;
-    text-align: center;
     border: 1px solid black;
     outline: none;
     border-radius: 20px;
     font-size: 15px;
-    padding-left: 5px; 
+    padding-left: 30px; 
 }
 .fa-magnifying-glass{
     position: absolute;
     left: 6px;
     top: 7px;
 }
-
+.dropdown{
+    display: inline-block;
+}
+.droplist{
+    display: none;
+   position: absolute;
+    background-color: whitesmoke;
+    color: black;
+    z-index: 1;
+    box-shadow: 3px 3px 6px black;
+    overflow: hidden;
+}
+.dropdown:hover .droplist{
+    display: block;
+}
+.droplist a{
+    /* padding: 10px 10px; */
+    display: block;
+    font-weight: bold;
+    
+}
+.droplist a:hover{
+    background-color: grey;
+    color: white;
+}
