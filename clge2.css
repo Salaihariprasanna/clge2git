@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 body{
     background-image: url(food1.jpg);
@@ -98,7 +99,7 @@ nav{
     color: black;
     font-size: 20px;
     margin: 20px; 
-     transition: -2s ease;
+ 
 }
 .search{
     display: flex;
@@ -128,19 +129,14 @@ nav{
     background-color: whitesmoke;
     color: black;
     z-index: 1;
-    box-shadow: 3px 3px 6px black;
+    box-shadow: 0px 3px 6px black;
     overflow: hidden;
 }
 .dropdown:hover .droplist{
     display: block;
 }
 .droplist a{
-    /* padding: 10px 10px; */
     display: block;
     font-weight: bold;
     
-}
-.droplist a:hover{
-    background-color: grey;
-    color: white;
 }
