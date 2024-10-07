@@ -9,24 +9,53 @@
     <!-- FONTAWESOME ICON LINK -->
     <script src="https://kit.fontawesome.com/99e4480914.js" crossorigin="anonymous"></script>
         <title>FreshBites</title>
+    <style>
+        *{
+    margin: 0%;
+    padding: 0%;
+}
+.gallery{
+    background-color: rgb(231, 244, 134);
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    height:100vh;
+}
+.gallery figure{
+    flex-basis: 33.33%;
+    flex-grow: 1;
+}
+.gallery figure img{
+    width:500px;
+    height:350px;
+    margin:10px;
+}
+.gallery figure figcaption{
+    font-size: 50px;
+    font-weight: bold;
+}
+.homeicon{
+    position:absolute;
+    top: 50%;
+    right:2%;
+    font-size: 40px;
+    box-shadow: 0px 0px 6px black;
+    border-radius: 50%;
+    background-color:white;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+.homeicon:hover{
+    background-color: gray;
+    transform: translateZ(50px);
+}
+.homeicon a{
+    text-decoration: none;
+}
+
+    </style>
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <a href="">
-                <li>HOME<i></i></li>
-            </a>
-            <a href="">
-                <li>VEG<i></i></li>
-            </a>
-            <a href="">
-                <li>NON-VEG<i></i></li>
-            </a>
-            <a href="">
-                <li>FAST FOOD<i></i></li>
-            </a>
-        </ul>
-    </nav>
     <div class="gallery">
     <figure>
         <img src="idly.jpg" alt="image1">
@@ -53,5 +82,6 @@
         <figcaption>caption6</figcaption>
     </figure>
     </div>
+    <div class="homeicon"><a href="D:\FSD\LEARN_CSS\clge2.html">🏠</a></div>
 </body>
 </html>
