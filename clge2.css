@@ -8,6 +8,7 @@ body{
     background-image: url(food1.jpg);
     background-size:cover;
     scroll-behavior: smooth;
+    backdrop-filter: blur(3px);
 }
 .shopname{
     display: flex;
@@ -84,23 +85,23 @@ nav{
     top: 0px;
     z-index: 1;
     background:transparent;
-    background-color: rgb(0, 0, 139,0.2);
-    backdrop-filter: blur(10px);
+    background-color: rgb(6, 6, 75,0.6);
+    backdrop-filter: blur(50px);
 }
 #nav-logo{
    
    font-family: brodway,algerian ,serif ;
    font-size: 35px;
    font-weight: bolder;
-   filter: drop-shadow( 3px 3px 5px rgb(0, 252, 252));
-   color:rgb(5, 54, 110);
+   filter: drop-shadow( 3px 3px 5px rgb(1, 10, 53));
+   color:rgb(201, 223, 249);
+   letter-spacing: 5px;
 }
 .menu{
     display: flex;
     justify-content: right;
     list-style-type: none;  
 }
-
 .menu li a{
     text-decoration: none;
     color: rgb(157, 223, 253);
@@ -114,8 +115,10 @@ nav{
     position: relative;
 }
 .search input{
+    width: 200px;
     height: 30px;
     display: flex;
+    /* text-align:right; */
     border: 1px solid black;
     outline: none;
     border-radius: 20px;
@@ -145,4 +148,31 @@ nav{
 .droplist a{
     display: block;
     font-weight: bold;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.droplist{
+    position: absolute;
+    display: none;
+    background-color:white;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 4px 6px black;
+    
+}
+.droplist a{
+    display: block;
+    margin: 5px;
+    padding: 10px 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.dropdown:hover .droplist{
+    display: block;
+}
+.droplist a:hover{
+    background-color: rgb(0, 59, 99);
+    color: rgb(253, 252, 252);
 }
