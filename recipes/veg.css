@@ -12,10 +12,12 @@ body{
     align-items: center;
     flex-wrap: wrap;
     box-sizing: border-box;
+    overflow:auto;
 
 }
 .gallery{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     perspective: 1000px;
@@ -23,8 +25,8 @@ body{
     height: 400px;
     padding: 10px;
     margin: 10px;
-    flex-basis: 200;
-    flex-grow: 0;
+    flex-basis:200;
+    flex-grow:1;
 }
 .card{
     position: relative;
