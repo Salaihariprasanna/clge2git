@@ -233,6 +233,37 @@ nav {
     background-color: rgb(0, 59, 99);
     color: rgb(253, 252, 252);
 }
+.offers{
+    display: flex;
+    place-content: center;
+    gap: 20px;
+    overflow: hidden;
+    width: 30%;
+    margin-top: 10px;
+    /* background-color: white; */
+    margin: auto;
+    
+}
+@keyframes slide {
+     0%{
+        transform: translateX(500px);
+     }
+     50%{
+        transform: translateX(-500px);
+     }
+     100%{
+        transform: translateX(0px);
+     }
+}
+.card1{
+    background-color: #055c9d;
+    flex: 0 0 200px;
+    height: 300px;
+    display: flex;
+    place-content: center;
+    border-radius: 10px;
+    animation: slide 3s linear infinite;
+}
 
 .footer {
     width: 100%;
