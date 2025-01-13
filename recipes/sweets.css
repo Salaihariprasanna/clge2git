@@ -68,8 +68,12 @@ body {
     padding: 2px;
   }
   .price {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #d84315;
+    display: inline-block;
+    background: #d7ccc8;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
   }
   
