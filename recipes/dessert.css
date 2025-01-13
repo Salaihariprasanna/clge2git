@@ -4,6 +4,7 @@ body {
     padding: 0;
     background: #fdf5e6;
     color: #333;
+    text-align: center;
   }
   
   /* Header Section */
@@ -78,4 +79,15 @@ body {
     border-radius: 5px;
     font-size: 1rem;
     margin-top: 10px;
+  }
+  .back-button {
+   
+    display: inline-block;
+    background: #ff6f61;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+    cursor: pointer; 
   }
