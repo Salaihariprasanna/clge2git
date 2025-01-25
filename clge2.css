@@ -1,79 +1,115 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     font-family: sans-serif;
+    /* overflow: hidden; */
 }
-body{
+
+body {
     background-image: url(food1.jpg);
-    background-size:cover;
+    background-size: cover;
     scroll-behavior: smooth;
     backdrop-filter: blur(3px);
+    overflow: auto;
+    /* scrollbar-width: none; */
 }
-.shopname{
+
+body::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.shopname {
     display: flex;
-    height:100vh;
-    
+    height: 100vh;
+    animation: swipe 5s 1 ease;
+    /* overflow: hidden; */
 }
-.left{
+
+@keyframes swipe {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        /* transform: translateX(50px); */
+        transform: translateX(0px);
+    }
+}
+
+.left {
     width: 50%;
     display: flex;
     flex-direction: column;
 }
-.right{
-    width:50%;
+
+.right {
+    width: 50%;
 }
-.top{
+
+.top {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
-    height: 50%; 
+    height: 50%;
 }
-.bottom{
+
+.bottom {
     height: 50%;
     padding: 10px;
     margin-left: 8vw;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
-h1, p {
+
+h1,
+p {
     margin: 0;
 }
-.top{
-    font-family: 'Poppins',sans-serif;
+
+.top {
+    font-family: 'Poppins', sans-serif;
     font-size: 120px;
-    background: linear-gradient( 45deg,rgb(2, 48, 92),rgb(0, 102, 185),rgb(0, 55, 100));
-     background-clip: text;
-     background-size: cover ;
-     color: transparent;
-}
-.bottom h1{
-    font-family: 'Merriweather',serif;
-    font-size:40px;
-    padding-bottom: 10px;
-    color:navy;
-}
-.bottom p{
-    font-family: 'Open-Sans',sans-serif;
-    padding-bottom: 20px;
-    font-weight: bold;
-    color:navy;
-}
-.link1{
-    font-family: 'Poppins',sans-serif;
-    font-size: 30px;
-    background:linear-gradient( 45deg,rgb(2, 48, 92),rgb(0, 102, 185),rgb(0, 55, 100));
+    background: linear-gradient(45deg, rgb(2, 48, 92), rgb(0, 102, 185), rgb(0, 55, 100));
     background-clip: text;
-    background-size: cover ;
+    background-size: cover;
     color: transparent;
 }
-.link1:hover{
-    text-decoration: none;
-    background: linear-gradient(45deg,coral, orange);
-     background-clip: text;
-     background-size: cover ;
-     color: transparent;
+
+.bottom h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: navy;
 }
-nav{
+
+.bottom p {
+    font-family: 'Open-Sans', sans-serif;
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: navy;
+}
+
+.link1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    background: linear-gradient(45deg, rgb(2, 48, 92), rgb(0, 102, 185), rgb(0, 55, 100));
+    background-clip: text;
+    background-size: cover;
+    color: transparent;
+}
+
+.link1:hover {
+    text-decoration: none;
+    background: linear-gradient(45deg, coral, orange);
+    background-clip: text;
+    background-size: cover;
+    color: transparent;
+}
+
+nav {
     height: 70px;
     width: 100%;
     display: flex;
@@ -84,37 +120,60 @@ nav{
     position: fixed;
     top: 0px;
     z-index: 1;
-    background:transparent;
-    background-color: rgb(6, 6, 75,0.6);
+    background: transparent;
+    background-color: rgb(6, 6, 75, 0.6);
     backdrop-filter: blur(50px);
 }
-#nav-logo{
-   
-   font-family: brodway,algerian ,serif ;
-   font-size: 35px;
-   font-weight: bolder;
-   filter: drop-shadow( 3px 3px 5px rgb(1, 10, 53));
-   color:rgb(201, 223, 249);
-   letter-spacing: 5px;
+
+#nav-logo {
+
+    font-family: brodway, algerian, serif;
+    font-size: 35px;
+    font-weight: bolder;
+    filter: drop-shadow(3px 3px 5px rgb(1, 10, 53));
+    color: rgb(201, 223, 249);
+    letter-spacing: 5px;
+    animation: shuffle 2s infinite ease-in-out;
 }
-.menu{
+
+@keyframes shuffle {
+    0% {
+        filter: drop-shadow(3px 3px 5px lightblue);
+        color: darkblue;
+    }
+
+    50% {
+        filter: drop-shadow(3px 3px 5px rgb(1, 10, 53));
+        color: rgb(201, 223, 249);
+    }
+
+    100% {
+        filter: drop-shadow(3px 3px 5px lightblue);
+        color: darkblue;
+    }
+}
+
+.menu {
     display: flex;
     justify-content: right;
-    list-style-type: none;  
+    list-style-type: none;
 }
-.menu li a{
+
+.menu li a {
     text-decoration: none;
     color: rgb(157, 223, 253);
     font-size: 20px;
-    margin: 20px; 
- 
+    margin: 20px;
+    transition: -2s ease;
 }
-.search{
+
+.search {
     display: flex;
     align-items: center;
     position: relative;
 }
-.search input{
+
+.search input {
     width: 200px;
     height: 30px;
     display: flex;
@@ -123,45 +182,41 @@ nav{
     outline: none;
     border-radius: 20px;
     font-size: 15px;
-    padding-left: 30px; 
+    padding-left: 30px;
+    font-weight: bold;
+    background-color: lightblue;
+    transition: 0.5s ease;
 }
-.fa-magnifying-glass{
+
+.search input:hover {
+    width: 300px;
+}
+
+.fa-magnifying-glass {
     position: absolute;
     left: 6px;
     top: 7px;
 }
-.dropdown{
-    display: inline-block;
+
+.menu li a:hover {
+    color: darkcyan;
 }
-.droplist{
-    display: none;
-   position: absolute;
-    background-color: whitesmoke;
-    color: black;
-    z-index: 1;
-    box-shadow: 0px 3px 6px black;
-    overflow: hidden;
-}
-.dropdown:hover .droplist{
-    display: block;
-}
-.droplist a{
-    display: block;
-    font-weight: bold;
-}
-.dropdown{
+
+.dropdown {
     position: relative;
     display: inline-block;
 }
-.droplist{
+
+.droplist {
     position: absolute;
     display: none;
-    background-color:white;
+    background-color: white;
     backdrop-filter: blur(20px);
     box-shadow: 0px 4px 6px black;
-    
+
 }
-.droplist a{
+
+.droplist a {
     display: block;
     margin: 5px;
     padding: 10px 10px;
@@ -169,10 +224,32 @@ nav{
     text-decoration: none;
     color: black;
 }
-.dropdown:hover .droplist{
+
+.dropdown:hover .droplist {
     display: block;
 }
-.droplist a:hover{
+
+.droplist a:hover {
     background-color: rgb(0, 59, 99);
     color: rgb(253, 252, 252);
 }
+
+.footer {
+    width: 100%;
+    background-color: rgb(0, 0, 84);
+    margin-top: 5px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer ul>li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.footer h3 {
+    margin: 20px 0px 20px 0px;
+}
+
