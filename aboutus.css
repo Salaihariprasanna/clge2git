@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif ,sans-serif;
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    'img content'
+    'img content'
+    'img content';
+}
+.prof{
+    height: 100vh;
+    width: 100vw;
+    background-color: darkblue;
+    color: white;
+  
+}
+.ver-line{
+    width: 3px;
+    height: 100vh;
+    background-color: white;
+    transform: rotate(35deg);
+    /* transform-origin: top left; */
+    display: flex;
+    place-self: center;
+}
+.person1{
+    grid-area: img;
+}
+.person1{
+    grid-area: content;
+}.person2{
+    grid-area: img;
+}
+.person2{
+    grid-area: content;
+}.person3{
+    grid-area: img;
+}.person3{
+    grid-area: content;
+}
