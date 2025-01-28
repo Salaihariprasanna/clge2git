@@ -3,42 +3,52 @@
     padding: 0;
     box-sizing: border-box;
     font-family: serif ,sans-serif;
+    color: white;
 }
-body{
+.container{
+    display: grid;
+    grid-template-areas:"one two";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    /* gap: 10px; */
+    width: 100vw;
+    height: 100vh;
+}
+.person1{
+    grid-area: one;
+    background-color: darkblue;
+
+}
+.para1{
+    grid-area: two;
+    background-color: darkblue;
+}
+
+/* body{
+    position: relative;
+    background-color: lightblue;
+} */
+/* .container{
     display: grid;
     grid-template-areas: 
-    'img content'
-    'img content'
-    'img content';
-}
-.prof{
-    height: 100vh;
-    width: 100vw;
-    background-color: darkblue;
-    color: white;
-  
-}
+    'photo para';
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr;  
+    background-color: red;
+} */
 .ver-line{
-    width: 3px;
     height: 100vh;
-    background-color: white;
+    width: 3px;
+    background-color: yellow;
+    position: absolute;
+    left: 40%;
     transform: rotate(35deg);
-    /* transform-origin: top left; */
-    display: flex;
-    place-self: center;
 }
-.person1{
-    grid-area: img;
-}
-.person1{
-    grid-area: content;
-}.person2{
-    grid-area: img;
-}
-.person2{
-    grid-area: content;
-}.person3{
-    grid-area: img;
-}.person3{
-    grid-area: content;
-}
+/* .person1{
+    grid-area: photo;
+    background-color: blue;
+} */
+/* .para1{
+    grid-area: para;
+    background-color: brown;
+} */
