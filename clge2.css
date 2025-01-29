@@ -21,22 +21,62 @@ body::-webkit-scrollbar {
 }
 body{
     display: grid;
-    grid-template-areas: 'header' 'main' 'footer';
-    grid-template-rows :0.5fr 3fr 1fr;
+    grid-template-areas: 'header' 'main' 'aside' 'footer';
+    grid-template-rows :0.5fr 1.5fr 1.5fr 1fr;
 }
 header{
     grid-area: header;  
 }
 main{
-    grid-area: main;    
+    grid-area: main;   
 }
 footer{
     grid-area: footer;
 }
-
+aside{
+    grid-area: aside;
+    width: 50%;
+    margin:0 0 1em 4em;
+    overflow: hidden;
+    position: relative;
+}
+aside img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation:fade 9s infinite running;
+}
+aside img:nth-child(1){
+    animation-delay: 0s;
+}
+aside img:nth-child(2){
+    animation-delay: 3s;
+}
+aside img:nth-child(3){
+    animation-delay: 6s;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+aside+img:hover{
+    animation-play-state: paused;
+}
 .shopname {
-    /* display: flex; */
-    /* height: 100vh; */
     animation: swipe 5s 1 ease;
 }
 @keyframes swipe {
@@ -51,37 +91,9 @@ footer{
         transform: translateX(0px);
     }
 }
-
-/* .left {
-
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-} */
-
-/* .right {
-    width: 50%;
-} */
-
-/* .top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50%;
-} */
-
-/* .bottom {
-    height: 50%;
-    padding: 10px;
-    margin-left: 8vw;
-    overflow-y: auto;
-} */
-
-h1,
-p {
+h1,p {
     margin: 0;
 }
-
 .top {
     font-family: 'Poppins', sans-serif;
     font-size: 120px;
