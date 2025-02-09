@@ -3,39 +3,25 @@
     padding: 0;
     box-sizing: border-box;
     font-family: serif ,sans-serif;
-    color: white;
+    color: whitesmoke;
 }
 .container{
     display: grid;
     grid-template-areas:"one two";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    /* gap: 10px; */
     width: 100vw;
     height: 100vh;
 }
 .person1{
     grid-area: one;
-    background-color: darkblue;
+    background:linear-gradient(#360033, #0b8793);
 
 }
 .para1{
     grid-area: two;
-    background-color: darkblue;
+    background:linear-gradient(#360033,#0b8793);
 }
-
-/* body{
-    position: relative;
-    background-color: lightblue;
-} */
-/* .container{
-    display: grid;
-    grid-template-areas: 
-    'photo para';
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr;  
-    background-color: red;
-} */
 .ver-line{
     height: 100vh;
     width: 3px;
@@ -44,11 +30,37 @@
     left: 40%;
     transform: rotate(35deg);
 }
-/* .person1{
-    grid-area: photo;
-    background-color: blue;
-} */
-/* .para1{
-    grid-area: para;
-    background-color: brown;
-} */
+
+ .container .person1{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+ }
+ .container .person1 img{
+    height: 400px;
+    width: 400px;
+    border-radius:50% ;
+    margin: 20px;
+   
+ }
+ .para1{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+ }
+ .para1 h1{
+    font-size: 2rem;
+    margin:10px;
+ }
+ .para1 ol{
+    font-size: 1.3rem;
+    margin: 20px;
+ }
+ .para1 ol li{
+    margin: 20px;
+ }
+ .para1 p{
+    font-size: 1.3rem;
+    margin: 20px;
+ }
