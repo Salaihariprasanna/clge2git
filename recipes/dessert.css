@@ -88,6 +88,12 @@ body {
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 1rem;
-    margin-top: 10px;
     cursor: pointer; 
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+  }
+  .back-button:hover{
+    background-color: #333;
   }
