@@ -7,8 +7,8 @@ body {
 }
 
 .menu-header {
-    background-color: grey;
-    color: #fff;
+    background-color: goldenrod;
+    color: whitesmoke;
     text-align: center;
     padding: 20px 0;
 }
@@ -22,8 +22,8 @@ body {
 }
 
 .Fastfood-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: goldenrod;
+    border: 1px solid whitesmoke;
     border-radius: 8px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
