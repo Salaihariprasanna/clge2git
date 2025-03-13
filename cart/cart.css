@@ -51,3 +51,15 @@ body {
     font-size: 1.2em;
     color: #333;
 }
+
+.back-button {
+   
+    display: inline-block;
+    background: #d7ccc8;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+    cursor: pointer; 
+  }

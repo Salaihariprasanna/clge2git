@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: rgb(179, 179, 179);
 }
 
 .menu-header {
@@ -22,8 +22,8 @@ body {
 }
 
 .Fastfood-item {
-    background-color: goldenrod;
-    border: 1px solid whitesmoke;
+    background-color: rgb(216, 215, 213);
+    border: 1px solid goldenrod;
     border-radius: 8px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -42,9 +42,14 @@ body {
 }
 
 .Fastfood-item span {
-    display: block;
-    margin-bottom: 10px;
-    color: #666;
+        display: inline-block;
+        background: goldenrod;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 1rem;
+        margin-top: 10px;
+    
 }
 
 /* Hover effect */
@@ -53,9 +58,9 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 .back-button {
-    
+   
     display: inline-block;
-    background: goldenrod;
+    background: #f3c90dd8;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
