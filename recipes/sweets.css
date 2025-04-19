@@ -7,7 +7,7 @@ body {
     /* line-height: 1.6; */
     text-align: center;
   }
-  
+   /*  */
   /* Header */
   header {
     text-align: center;
@@ -79,17 +79,33 @@ body {
     margin-top: 10px;
   }
   .back-button {
-    background: #d7ccc8;
-    color: black;
-    /* padding: 5px; */
-    border-radius: 5px;
+    border: none;
+    display: inline-block;
+    background-color: #d7ccc8;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
     font-size: 1rem;
-    cursor: pointer; 
+    cursor: pointer;  
+  }
+  .back-button i{
+    color: #3e2723;
   }
   header{
     display: flex;
     justify-content: space-between;
   }
   .back-button:hover{
-    background: #a1887f;
+    background-color:#3e2723 ;
+  }
+   .back-button i{
+    font-weight: bold;
+    font-size: 25px;
+    color: #3e2723;
+  }
+  .back-button:hover i{
+    color: white;
+    
   }
