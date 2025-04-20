@@ -1,5 +1,3 @@
-THIS IS THE CSS LEARNING FILE. THERE ARE TWO CODERS IN THIS REPOSITORY.
-#SALAI HARI PRASANNA
-#BARANIDHARAN
-*WE DID FRONTEND CHALLENGES TO IMPROVE WEB DEVELOPMENT LOOP AND HOLES.
-THANK YOU
+A basic web page using HTML, CSS, JS
+Samples of Login, Home, Cart, Listed Things and more pages.
+Discovering the various features for improvement.
