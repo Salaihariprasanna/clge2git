@@ -76,14 +76,28 @@ h1 {
     margin-top: 10px;
 }
 .back-button {
-    background: #ff6f61;
+    border: none;
+    display: inline-block;
+    background: #ff6347;
+    height: 40px;
+    width: 50px;
     color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
+    /* padding: 5px 10px; */
+    border-radius: 10px;
     font-size: 1rem;
     cursor: pointer;
-    margin-right: 5%; 
+    margin: 0px 30px; 
+
   }
-  .back-button:hover {
-    background: #4a2c26;
+  .back-button:hover i{
+    /* background-color: white; */
+    color: #ff6347;
+  }
+  .back-button:hover{
+    background-color: white;
+  }
+  .back-button i{
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
   }

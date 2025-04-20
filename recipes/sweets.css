@@ -11,7 +11,7 @@ body {
   /* Header */
   header {
     text-align: center;
-    background-color: #d7ccc8;
+    background-color:darkgoldenrod;
     padding: 20px;
     border-bottom: 2px solid #a1887f;
   }
@@ -19,7 +19,7 @@ body {
   header h1 {
     margin: 0;
     font-size: 2.5em;
-    color: #4e342e;
+    color: white;
   }
   
   header p {
@@ -81,7 +81,7 @@ body {
   .back-button {
     border: none;
     display: inline-block;
-    background-color: #d7ccc8;
+    background-color: darkgoldenrod;
     height: 50px;
     width: 50px;
     color: #fff;
@@ -90,22 +90,19 @@ body {
     font-size: 1rem;
     cursor: pointer;  
   }
-  .back-button i{
-    color: #3e2723;
-  }
   header{
     display: flex;
     justify-content: space-between;
   }
   .back-button:hover{
-    background-color:#3e2723 ;
+    background-color:white ;
   }
    .back-button i{
     font-weight: bold;
     font-size: 25px;
-    color: #3e2723;
+    color:white;
   }
   .back-button:hover i{
-    color: white;
+    color: darkgoldenrod;
     
   }

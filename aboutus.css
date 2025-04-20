@@ -5,6 +5,7 @@
     font-family: serif ,sans-serif;
     color: whitesmoke;
 }
+/* PROFILE-1 */
 .container{
     display: grid;
     grid-template-areas:"one two";
@@ -12,6 +13,7 @@
     grid-template-rows: 1fr;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 .person1{
     grid-area: one;
@@ -64,3 +66,13 @@
     font-size: 1.3rem;
     margin: 20px;
  }
+ /* PROFILE-2 */
+ .person2{
+   grid-area: two;
+   background:linear-gradient(#360033, #0b8793);
+
+}
+.para2{
+   grid-area: one;
+   background:linear-gradient(#360033,#0b8793);
+}
