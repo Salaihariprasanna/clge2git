@@ -11,7 +11,7 @@
    width: 100vw;
    height: 100vh;
    overflow: hidden;
-   background: linear-gradient(180deg,#360033, #0b8793);
+   background: linear-gradient(120deg,#360033, #0b8793);
 
 }
 
@@ -30,15 +30,19 @@
  .container1 .para1 {
    width: 50%;
    float: right;
-   /* position: relative;
-   top: 50%; */
 }
 .container1 .para1 h1{
   position:relative ;
   top:30px;
 }
-.container1 .para1 p ol li{
-   margin-top: 50%;
+.container1 .para1  ol{
+   margin-top:200px;
+}
+.container1 .para1 ol li{
+   margin:10px;
+}
+.container1 .para1 p{
+      margin-top:50px;
 }
 
 
