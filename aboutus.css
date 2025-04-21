@@ -1,0 +1,98 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: serif, sans-serif;
+   color: whitesmoke;
+}
+
+/* PROFILE-1 */
+.container1{
+   width: 100vw;
+   height: 100vh;
+   overflow: hidden;
+   background: linear-gradient(120deg,#360033, #0b8793);
+
+}
+
+.container1 .person1{
+   width: 50%;
+   float: left;
+}
+.person1 img{
+   width:100%;
+   filter: drop-shadow(10px 10px 10px rgba(144, 210, 243,0.5));
+   position: relative;
+   left: 15%;
+}
+.container1 
+ .container1 .para1 {
+   width: 50%;
+   float: right;
+}
+.container1 .para1 h1{
+  position:relative ;
+  top:30px;
+  font-size:50px;
+}
+.container1 .para1  ol{
+   margin-top:200px;
+}
+.container1 .para1 ol li{
+   margin:10px;
+}
+.container1 .para1 p{
+      margin-top:50px;
+}
+
+
+/* PROFILE-2 */
+.person2 {
+   grid-area: two;
+   background: linear-gradient(#360033, #0b8793);
+
+}
+
+.para2 {
+   grid-area: one;
+   background: linear-gradient(#360033, #0b8793);
+}
+.container .person2 {
+   display: flex;
+   justify-content: end;
+   align-items: center;
+}
+
+.container .person2 img {
+   height: 400px;
+   width: 400px;
+   border-radius: 50%;
+   margin: 20px;
+
+}
+
+.para2 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.para2 h1 {
+   font-size: 2rem;
+   margin: 10px;
+}
+
+.para2 ol {
+   font-size: 1.3rem;
+   margin: 20px;
+}
+
+.para2 ol li {
+   margin: 20px;
+}
+
+.para2 p {
+   font-size: 1.3rem;
+   margin: 20px;
+}
