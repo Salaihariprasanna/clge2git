@@ -1,78 +1,94 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: serif ,sans-serif;
-    color: whitesmoke;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: serif, sans-serif;
+   color: whitesmoke;
 }
+
 /* PROFILE-1 */
-.container{
-    display: grid;
-    grid-template-areas:"one two";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-}
-.person1{
-    grid-area: one;
-    background:linear-gradient(#360033, #0b8793);
+.container1{
+   width: 100vw;
+   height: 100vh;
+   overflow: hidden;
+   background: linear-gradient(180deg,#360033, #0b8793);
 
 }
-.para1{
-    grid-area: two;
-    background:linear-gradient(#360033,#0b8793);
+
+.container1 .person1{
+   width: 50%;
+   float: left;
 }
-.ver-line{
-    height: 100vh;
-    width: 3px;
-    background-color: yellow;
-    position: absolute;
-    left: 40%;
-    transform: rotate(35deg);
+.person1 img{
+   width:100%;
+   /* height:100%; */
+   filter: drop-shadow(10px 10px 10px rgba(144, 210, 243,0.5));
+   position: relative;
+   left: 15%;
+   /* top: 60%; */
+}
+ .container1 .para1 {
+   width: 50%;
+   float: right;
+   /* position: relative;
+   top: 50%; */
+}
+.container1 .para1 h1{
+  position:relative ;
+  top:30px;
+}
+.container1 .para1 p ol li{
+   margin-top: 50%;
 }
 
- .container .person1{
-    display: flex;
-    justify-content: start;
-    align-items: center;
- }
- .container .person1 img{
-    height: 400px;
-    width: 400px;
-    border-radius:50% ;
-    margin: 20px;
-   
- }
- .para1{
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction: column;
- }
- .para1 h1{
-    font-size: 2rem;
-    margin:10px;
- }
- .para1 ol{
-    font-size: 1.3rem;
-    margin: 20px;
- }
- .para1 ol li{
-    margin: 20px;
- }
- .para1 p{
-    font-size: 1.3rem;
-    margin: 20px;
- }
- /* PROFILE-2 */
- .person2{
+
+/* PROFILE-2 */
+.person2 {
    grid-area: two;
-   background:linear-gradient(#360033, #0b8793);
+   background: linear-gradient(#360033, #0b8793);
 
 }
-.para2{
+
+.para2 {
    grid-area: one;
-   background:linear-gradient(#360033,#0b8793);
+   background: linear-gradient(#360033, #0b8793);
+}
+.container .person2 {
+   display: flex;
+   justify-content: end;
+   align-items: center;
+}
+
+.container .person2 img {
+   height: 400px;
+   width: 400px;
+   border-radius: 50%;
+   margin: 20px;
+
+}
+
+.para2 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.para2 h1 {
+   font-size: 2rem;
+   margin: 10px;
+}
+
+.para2 ol {
+   font-size: 1.3rem;
+   margin: 20px;
+}
+
+.para2 ol li {
+   margin: 20px;
+}
+
+.para2 p {
+   font-size: 1.3rem;
+   margin: 20px;
 }
