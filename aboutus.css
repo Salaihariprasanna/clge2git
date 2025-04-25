@@ -52,10 +52,13 @@
  .para1 h1{
     font-size: 2rem;
     margin:10px;
+   
  }
  .para1 ol{
     font-size: 1.3rem;
     margin: 20px;
+    animation: fade 2s ease-in forwards;
+    opacity: 0;
  }
  .para1 ol li{
     margin: 20px;
@@ -63,4 +66,17 @@
  .para1 p{
     font-size: 1.3rem;
     margin: 20px;
+    animation: fade 2s ease-in forwards;
+    opacity: 0;
  }
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+}
