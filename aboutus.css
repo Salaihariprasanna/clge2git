@@ -18,31 +18,56 @@
 .container1 .person1{
    width: 50%;
    float: left;
-   background-color: beige;
+   display: flex;
+   justify-content: center;
+   align-items: start;
+   overflow: hidden;
+   margin-top: 70px;
+}
+.container1 .person1 .imagebg{
+   width: 400px;
+   height:400px;
+   position: absolute;
+   border-radius:50%;
+   background-color: transparent;
+   box-shadow:0 20px 40px rgba(0,0,0,1);
+   z-index:0;
+
 }
 .person1 img{
    width:100%;
-   filter: drop-shadow(10px 10px 10px rgba(144, 210, 243,0.5));
    position: relative;
-   left: 15%;
+   z-index:1;
+   object-fit: cover;
+   left:17%;
+   top: 70px; 
+
 }
+
  .container1 .para1 {
    width: 50%;
    float: right;
+   font-weight:bolt;
+   word-spacing: 5px;
 }
 .container1 .para1 h1{
   position:relative ;
-  top:30px;
+  top:80px;
+  left:150px;
   font-size:50px;
 }
 .container1 .para1  ol{
-   margin-top:200px;
+   margin-top:260px;
+   padding: 30px;
 }
 .container1 .para1 ol li{
-   margin:10px;
+   font-size:20px;
+
 }
 .container1 .para1 p{
-      margin-top:50px;
+   font-size:20px;
+   margin-right: 20px;
+   padding: 20px;
 }
 
 
