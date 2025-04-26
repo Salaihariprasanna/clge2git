@@ -38,7 +38,7 @@ body {
   
   
   .dessert-item {
-    background: #fff;
+    background: #fba7a7;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -81,12 +81,14 @@ body {
     margin-top: 10px;
   }
   .back-button {
-   
+    border: none;
     display: inline-block;
     background: #ff6f61;
+    height: 50px;
+    width: 50px;
     color: #fff;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 1rem;
     cursor: pointer; 
   }
@@ -94,6 +96,15 @@ body {
     display: flex;
     justify-content: space-between;
   }
+  .back-button:hover i{
+    /* background-color: white; */
+    color: #e1756c;
+  }
   .back-button:hover{
-    background-color: #333;
+    background-color: white;
+  }
+  .back-button i{
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
   }

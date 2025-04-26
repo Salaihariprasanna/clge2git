@@ -7,11 +7,11 @@ body {
     /* line-height: 1.6; */
     text-align: center;
   }
-  
+   /*  */
   /* Header */
   header {
     text-align: center;
-    background-color: #d7ccc8;
+    background-color:darkgoldenrod;
     padding: 20px;
     border-bottom: 2px solid #a1887f;
   }
@@ -19,7 +19,7 @@ body {
   header h1 {
     margin: 0;
     font-size: 2.5em;
-    color: #4e342e;
+    color: white;
   }
   
   header p {
@@ -79,17 +79,30 @@ body {
     margin-top: 10px;
   }
   .back-button {
-    background: #d7ccc8;
-    color: black;
-    /* padding: 5px; */
-    border-radius: 5px;
+    border: none;
+    display: inline-block;
+    background-color: darkgoldenrod;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
     font-size: 1rem;
-    cursor: pointer; 
+    cursor: pointer;  
   }
   header{
     display: flex;
     justify-content: space-between;
   }
   .back-button:hover{
-    background: #a1887f;
+    background-color:white ;
+  }
+   .back-button i{
+    font-weight: bold;
+    font-size: 25px;
+    color:white;
+  }
+  .back-button:hover i{
+    color: darkgoldenrod;
+    
   }
