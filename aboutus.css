@@ -4,7 +4,10 @@
    box-sizing: border-box;
    font-family: serif, sans-serif;
    color: whitesmoke;
+   scroll-behavior: smooth;
+   scrollbar-width: none;
 }
+
 
 /* PROFILE-1 */
 .container1{
@@ -31,13 +34,13 @@
    border-radius:50%;
    background-color: transparent;
    box-shadow:0 20px 40px rgba(0,0,0,1);
-   z-index:0;
+   z-index:1;
 
 }
 .person1 img{
    width:100%;
    position: relative;
-   z-index:1;
+   z-index:2;
    object-fit: cover;
    left:17%;
    top: 70px; 
@@ -52,7 +55,7 @@
 }
 .container1 .para1 h1{
   position:relative ;
-  top:80px;
+  top: 150px;
   left:150px;
   font-size:50px;
 }
@@ -72,52 +75,68 @@
 
 
 /* PROFILE-2 */
-.person2 {
-   grid-area: two;
-   background: linear-gradient(#360033, #0b8793);
+.container2{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(-120deg,#360033, #0b8793);
+ 
+ }
+.container2 .person2 {
+    width: 50%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
+    margin-top: 70px;
+}
+.container2 .person2 .imagebg{
+    width: 400px;
+    height:400px;
+    position: absolute;
+    right: 40px;
+    border-radius:50%;
+    background-color: transparent;
+    box-shadow:0 20px 40px rgba(0,0,0,1);
+    z-index:1;
+ 
+ }
+
+.container2 .person2 img {
+    width:100%;
+    position: relative;
+    z-index:2;
+    left:30%;
+    top: 70px; 
 
 }
 
-.para2 {
-   grid-area: one;
-   background: linear-gradient(#360033, #0b8793);
-}
-.container .person2 {
-   display: flex;
-   justify-content: end;
-   align-items: center;
-}
+.container2 .para2 {
+    width: 50%;
+    float: left;
+    font-weight:bolt;
+    word-spacing: 5px;
+ }
+ .container2 .para2 h1{
+   position:relative ;
+   top: 150px;
+   left: 50px;
+   font-size:50px;
+ }  
+ .container2 .para2  ol{
+    margin-top: 260px;
+    margin-left: 60px;
+    padding: 20px;
+ }
+ .container2 .para2 ol li{
+    font-size:20px;
 
-.container .person2 img {
-   height: 400px;
-   width: 400px;
-   border-radius: 50%;
-   margin: 20px;
+ }
+ .container2 .para2 p{
+    font-size:20px;
+    margin-left: 50px;
+    padding: 0px 20px 20px 20px;
+    margin-top: 0px;
 
-}
-
-.para2 {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-}
-
-.para2 h1 {
-   font-size: 2rem;
-   margin: 10px;
-}
-
-.para2 ol {
-   font-size: 1.3rem;
-   margin: 20px;
-}
-
-.para2 ol li {
-   margin: 20px;
-}
-
-.para2 p {
-   font-size: 1.3rem;
-   margin: 20px;
-}
+ }
