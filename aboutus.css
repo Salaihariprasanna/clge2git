@@ -3,22 +3,20 @@
    padding: 0;
    box-sizing: border-box;
    font-family: serif, sans-serif;
-   color: whitesmoke;
+   /* color: whitesmoke; */
    scroll-behavior: smooth;
    scrollbar-width: none;
 }
-
-
 /* PROFILE-1 */
-.container1{
+.container1 {
    width: 100vw;
    height: 100vh;
    overflow: hidden;
-   background: linear-gradient(120deg,#360033, #0b8793);
+   background: linear-gradient(120deg, #360033, #0b8793);
    position: relative;
 }
 
-.container1 .person1{
+.container1 .person1 {
    width: 50%;
    float: left;
    /* display: flex;
@@ -26,79 +24,93 @@
    align-items: start; */
    /* overflow: hidden; */
 }
-.container1 .imagebg1{
+
+.container1 .imagebg1 {
    width: 600px;
    height: 600px;
    position: absolute;
-   left:-100px;
+   left: -100px;
    top: -100px;
-   border-radius:50%;
+   border-radius: 50%;
    background-color: transparent;
-   box-shadow:0 20px 40px rgba(0,0,0,1);
-   z-index:1;
+   box-shadow: 0 20px 40px rgba(0, 0, 0, 1);
+   z-index: 1;
 
 }
-.container1 .imagebg2{
+
+.container1 .imagebg2 {
    width: 800px;
    height: 800px;
    position: absolute;
-   right:-200px;
+   right: -200px;
    bottom: -50px;
-   border-radius:50%;
+   border-radius: 50%;
    background-color: transparent;
-   box-shadow:0 20px 40px rgba(0,0,0,1);
-   z-index:1;
+   box-shadow: 0 20px 40px rgba(0, 0, 0, 1);
+   z-index: 1;
 
 }
-#prof-img1{
+
+#prof-img1 {
    width: 400px;
    height: 400px;
    border-radius: 50%;
-   z-index:2;
-   object-fit: cover; 
+   z-index: 2;
+   object-fit: cover;
    margin-top: 30px;
 }
 
- .container1 .para1 {
+.container1 .para1 {
    width: 50%;
    float: right;
    word-spacing: 5px;
+   color: whitesmoke;
 }
-.container1 .para1 h1{
-  position:relative ;
-  top: 150px;
-  left:150px;
-  font-size:50px;
-  font-family: "merriweather", cursive;
-  font-weight: bold;
-  font-style: normal;
-  font-weight: bold;
-}
-.container1 .para1 p{
+
+.container1 .para1 h1 {
    position: relative;
-   top:150px ;
+   top: 150px;
+   left: 150px;
+   font-size: 50px;
+   font-family: "merriweather", cursive;
+   font-weight: bold;
+   font-style: normal;
+   font-weight: bold;
+   color: whitesmoke;
+}
+
+.container1 .para1 p {
+   position: relative;
+   top: 150px;
    left: 150px;
    font-size: 2rem;
    margin-right: 10px;
+   color: whitesmoke;
 }
-#medol-icon{
+
+#medol-icon {
    width: 30px;
    height: 30px;
 }
 
-.container1 .para1  ol{
-   margin-top:150px;
+.container1 .para1 ol {
+   margin-top: 150px;
    padding: 70px;
    margin-left: 150px;
+   color: whitesmoke;
 }
-.container1 .para1 ol li{
-   font-size:20px;
+
+.container1 .para1 ol li {
+   font-size: 20px;
    font-family: sofia;
+   color: whitesmoke;
 }
-#skill-icon{
+
+#skill-icon {
    margin: 100px 0px 30px 150px;
 }
-#skill-icon ul{
+
+#skill-icon ul {
    display: flex;
    justify-content: space-around;
    list-style: none;
@@ -107,7 +119,7 @@
    gap: 10px;
 }
 
-#skill-icon ul li{
+#skill-icon ul li {
    width: 25%;
    height: 120px;
    display: flex;
@@ -121,14 +133,15 @@
    color: white;
 }
 
-#skill-icon ul li img{
+#skill-icon ul li img {
    width: 60px;
    height: 60px;
    background-color: transparent;
    object-fit: contain;
-   
+
 }
-#skill-icon ul li p{
+
+#skill-icon ul li p {
    height: 50%;
    width: 100%;
    margin: 0;
@@ -138,49 +151,52 @@
    align-items: center;
    padding: 20px;
 }
-#skill-icon ul li:hover{
+
+#skill-icon ul li:hover {
    transform: scale(1.05);
-   background: rgba(255,255,255,0.1);
+   background: rgba(255, 255, 255, 0.1);
 
 }
 
 /* PROFILE-2 */
-.container2{
+.container2 {
    width: 100vw;
    height: 100vh;
    overflow: hidden;
-   background: linear-gradient(120deg,#360033, #0b8793);
+   background: linear-gradient(120deg, #360033, #0b8793);
    z-index: 0;
    position: relative;
 }
+
 .container2 .person2 {
-    width: 50%;
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    margin-top: 70px;
-    position: relative;
+   width: 50%;
+   float: left;
+   display: flex;
+   justify-content: center;
+   align-items: start;
+   margin-top: 70px;
+   position: relative;
 }
-.container2 .person2 .imagebg{
+
+.container2 .person2 .imagebg {
    width: 900px;
    height: 900px;
    position: absolute;
-   left:-50%;
+   left: -50%;
    top: -25%;
-   border-radius:50%;
+   border-radius: 50%;
    background-color: transparent;
-   box-shadow:0 20px 40px rgba(0,0,0,1);
+   box-shadow: 0 20px 40px rgba(0, 0, 0, 1);
 
-   z-index:1;
- 
- }
+   z-index: 1;
+
+}
 
 #prof-img2 {
    width: 400px;
    height: 500px;
-   z-index:2;
-   object-fit: cover; 
+   z-index: 2;
+   object-fit: cover;
    margin: 30px 250px 0px 0px;
 
 }
@@ -190,24 +206,94 @@
    float: right;
    word-spacing: 5px;
 }
-.container2 .para2 h1{
-  position:relative ;
-  left:50px;
-  font-size: 3rem;
-  font-family: "merriweather", cursive;
-  top: 150px;
-  font-weight: bold;
-  font-style: normal;
-  font-weight: bold;
+
+.container2 .para2 h1 {
+   position: relative;
+   left: 50px;
+   font-size: 3rem;
+   font-family: "merriweather", cursive;
+   top: 150px;
+   font-weight: bold;
+   font-style: normal;
+   font-weight: bold;
 }
 
-.container2 .para2 ol{
-   margin-top:150px;
+.container2 .para2 ol {
+   margin-top: 150px;
    padding: 70px;
    margin-left: 150px;
 }
-.container2 .para2 ol li{
-   font-size:20px;
+
+.container2 .para2 ol li {
+   font-size: 20px;
    font-family: "sofia";
    font-style: normal;
+}
+
+/**STAR RATING */
+.rating {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   background-color: #000000;
+   padding: 40px;
+}
+
+.rate-container {
+   background-color: #364156;
+   color: #bdc6d5;
+   width: 250px;
+   height:300px;
+   margin: 20px;
+   padding: 10px;
+   text-align: center;
+   border-radius: 15px;
+   box-shadow: 1px 1px 10px 5px rgb(255, 255, 255,0.2);
+
+}
+
+.rate-image {
+   display: block;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin: 0 auto 15px;
+   box-shadow: 10px 10px 10px rgb(0,0,0,0.5);
+
+}
+
+.rate-image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+}
+
+.rate-content {
+   margin-bottom: 14px;
+   display: block;
+}
+
+.fa-quote-left {
+   float: left;
+   padding: 2px;
+   color: #11151c;
+
+}
+.fa-quote-right{
+   float: right;
+   padding:2px;
+   color: #11151c;
+}
+.star-rating{
+   color: yellow;
+   font-size: 20px;
+}
+.rate-container:hover{
+   box-shadow: 1px 1px 10px 5px rgb(255, 255, 255,0.6);
+}
+.rate-container:hover .rate-image{
+   transform: scale(1.1);
+   transition: 1s;
 }
