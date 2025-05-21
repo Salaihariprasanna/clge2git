@@ -6,6 +6,7 @@
    /* color: whitesmoke; */
    scroll-behavior: smooth;
    scrollbar-width: none;
+   overflow:scroll;
 }
 /* PROFILE-1 */
 .container1 {
